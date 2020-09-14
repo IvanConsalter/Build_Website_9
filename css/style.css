@@ -110,6 +110,49 @@ p {
     background: var(--color-primary-8);
 }
 
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)), url(../img/main.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner {
+    text-align: center;
+    color: var(--color-white);
+    padding: 0 3rem;
+}
+
+.hero-banner h1 {
+    text-transform: uppercase;
+}
+
+.hero-banner p {
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-white);
+    letter-spacing: var(--spacing);
+}    
+
+.hero-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: var(--color-white);
+    color: var(--color-primary-5);
+}
+
+.hero-btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
 @media screen and (min-width: 800px) {
     h1 {
         font-size: 4rem;
