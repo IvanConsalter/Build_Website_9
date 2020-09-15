@@ -311,6 +311,38 @@ p {
     color:  var(--color-primary-5);
 }
 
+/* GALLERY */
+.gallery-img-container {
+    position: relative;
+    background: var(--color-primary-5);
+}
+
+.gallery-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--color-white);
+    opacity: 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-img {
+    height: 17rem;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+    opacity: 0.5;
+}
+
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+
 @media screen and (min-width: 576px) {
     .services-center {
         display: flex;
@@ -333,6 +365,16 @@ p {
 
     .tour-card {
         flex: 0 0 calc(50% - 2rem);
+    }
+
+    /* GALLERY */
+    .gallery-center {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery-img-container {
+        flex: 0 0 50%;
     }
 }
 
@@ -395,6 +437,11 @@ p {
         flex: 1 1 auto;
         max-width: 100%;
         padding-left: 2rem;
+    }
+
+    /* GALLERY */
+    .gallery-img-container {
+        flex: 0 0 25%;
     }
 }
 
