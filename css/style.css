@@ -166,6 +166,7 @@ p {
 .nav-toggle {
     background: transparent;
     border: transparent;
+    outline: transparent;
     font-size: 1.7rem;
     color: var(--color-primary-5);
     cursor: pointer;
@@ -210,6 +211,16 @@ p {
 
 .nav-icon:hover {
     color: var(--color-primary-2);
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links {
+    height: 300px;
 }
 /* HERO */
 .hero {
