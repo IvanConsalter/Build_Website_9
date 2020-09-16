@@ -21,7 +21,7 @@ scrollLinks.forEach( link => {
         const id = event.target.getAttribute('href').slice(1)
         const element = document.querySelector(`#${id}`)
 
-        let position = element.offsetTop - 71
+        let position = element.offsetTop - 65
 
         window.scrollTo({
             left: 0,
